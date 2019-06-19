@@ -1,0 +1,18 @@
+## data files
+/data/*
+!/data/norm5.mat
+!/data/norm.mat
+
+## old sources
+/oldm/*
+
+## output
+/out*/*
+/plot*/*
+/*.mat
+
+## auxiliary files
+*.asv
+
+## macOS
+*.DS_Store
