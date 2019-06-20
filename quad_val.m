@@ -1,4 +1,4 @@
-function v = quad_val(X,nu)
+function v = quad_val(X,nu) % nu > 0
 [n,m] = size(X);
 X = X/nu;
 [S,I] = sort(X,1,'descend');

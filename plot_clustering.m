@@ -17,12 +17,7 @@ max_func.grad = @(X) quad_grad(X,nu);
 
 symb = ['x' '*' '^' '+' 'p'];
 
-% [U,V,OBJ] = c_means_norm(X,c,nu,1);
-% [U,V,OBJ] = c_means_square(X,c,nu,1);
-% [U,V,OBJ] = c_means_entro(X,c,nu,1);
 [V,obj,misc] = c_means(X,c,max_func);
-% [U,V,OBJ] = c_means_norm2(X,c,nu,1);
-% [U,V,OBJ] = c_means_simplex(X,c,nu,1);
 
 figure; hold on; axis equal;
 
