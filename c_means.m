@@ -18,7 +18,7 @@ obj = -sum(fmax_func.val(-T));
 
 h = 1;
 
-while pre_obj - obj > 1.0e-3*abs(obj) && h < max_itr
+while pre_obj - obj > 1.0e-8*abs(obj) && h < max_itr
     
     pre_obj = obj;
         
