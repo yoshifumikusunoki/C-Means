@@ -10,6 +10,13 @@
 /out*/*
 /plot*/*
 /*.mat
+!/plot/extnorm_nu2.png
+!/plot/extnorm_nu20.png
+!/plot/entro_nu10.png
+!/plot/entro_nu30.png
+!/plot/quad_nu20.png
+!/plot/quad_nu60.png
+!/plot/max.png
 
 ## auxiliary files
 *.asv
