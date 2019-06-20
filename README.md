@@ -34,7 +34,7 @@ then, we get the result of c-means as follows.
 
 ![](plot/entro_nu10.png)
 
-## Samples
+## Examples
 
 ### Bezdek's fuzzy c-means for parameter 2 and 20
 ![](plot/extnorm_nu2.png)![](plot/extnorm_nu20.png)
