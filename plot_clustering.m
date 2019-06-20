@@ -1,6 +1,6 @@
 load data\norm5.mat
 
-nu = 1;
+nu = 100;
 c = 5;
 
 % max_func.val = @max_val;
@@ -9,8 +9,11 @@ c = 5;
 % max_func.val = @(X) entro_val(X,nu);
 % max_func.grad = @(X) entro_grad(X,nu);
 
-max_func.val = @(X) extnorm_val(X,nu);
-max_func.grad = @(X) extnorm_grad(X,nu);
+% max_func.val = @(X) extnorm_val(X,nu);
+% max_func.grad = @(X) extnorm_grad(X,nu);
+
+max_func.val = @(X) quad_val(X,nu);
+max_func.grad = @(X) quad_grad(X,nu);
 
 symb = ['x' '*' '^' '+' 'p'];
 
@@ -39,6 +42,6 @@ z2 = linspace(minX-0.01*(maxX-minX),maxX+0.01*(maxX-minX));
 Z = [Z1(:) Z2(:)];
 T = ones(c,1)*sum(Z.^2,2)' - 2*V*Z' + (sum(V.^2,2))*ones(1,size(Z,1));
 g = -max_func.val(-T);
-contour(Z1, Z2, reshape(g,[100,100]), 50,':','Color', 'k');
+contour(Z1, Z2, reshape(g,size(Z1)), 50,':','Color', 'k');
 
 
